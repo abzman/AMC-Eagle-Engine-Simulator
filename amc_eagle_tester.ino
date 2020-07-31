@@ -58,17 +58,19 @@ void setup() {
 }
 
 void loop() {
-
+/*
+tone(tach_pin, 50);
+delay(2000);
 tone(tach_pin, 100);
-delay(1000);
+delay(2000);
+tone(tach_pin, 150);
+delay(2000);
 tone(tach_pin, 200);
-delay(1000);
-tone(tach_pin, 300);
-delay(1000);
-tone(tach_pin, 400);
-delay(1000);
-tone(tach_pin, 480);
-delay(1000);
+delay(2000);
+tone(tach_pin, 250);
+delay(2000);
+tone(tach_pin, 300); //6000rpm
+delay(2000);
 noTone(tach_pin);
 
   for (int fadeValue = 0 ; fadeValue <= 72; fadeValue += 1) {
@@ -148,4 +150,27 @@ delay(500);
     delay(500);
   digitalWrite(b0_pin, 0);
     delay(500);
+    */
+    //richer
+  digitalWrite(a0_pin, 1);
+    delay(25);
+  digitalWrite(b0_pin, 1);
+    delay(25);
+  digitalWrite(a0_pin, 0);
+    delay(25);
+  digitalWrite(b0_pin, 0);
+    delay(8);
+
+
+    /*
+    //leaner
+  digitalWrite(b0_pin, 1);
+    delay(25);
+  digitalWrite(a0_pin, 1);
+    delay(25);
+  digitalWrite(b0_pin, 0);
+    delay(25);
+  digitalWrite(a0_pin, 0);
+    delay(8);
+    */
 }
